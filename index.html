@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A calm daily inspiration page with one Stoic reflection and one motivational quote."
+    />
+    <title>Daily Inspiration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="quotes.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <p class="eyebrow">Daily practice</p>
+        <h1>Daily Inspiration</h1>
+        <p class="subtitle">
+          Begin the day with perspective, then move forward with intention.
+        </p>
+        <p class="date" id="today-date"></p>
+      </section>
+
+      <section class="quote-block quote-block-primary" aria-labelledby="stoic-heading">
+        <p class="section-label">Morning reflection</p>
+        <h2 id="stoic-heading">Daily Stoic</h2>
+        <blockquote class="quote-card">
+          <p class="quote-text" id="stoic-text"></p>
+          <footer>
+            <p class="quote-author" id="stoic-author"></p>
+            <p class="quote-source" id="stoic-source"></p>
+          </footer>
+        </blockquote>
+      </section>
+
+      <p class="transition">Carry this with you into the day.</p>
+
+      <section class="quote-block" aria-labelledby="motivation-heading">
+        <p class="section-label">Quiet momentum</p>
+        <h2 id="motivation-heading">Daily Motivation</h2>
+        <blockquote class="quote-card quote-card-secondary">
+          <p class="quote-text" id="motivation-text"></p>
+          <footer>
+            <p class="quote-author" id="motivation-author"></p>
+            <p class="quote-source" id="motivation-source"></p>
+          </footer>
+        </blockquote>
+      </section>
+
+      <footer class="page-footer">
+        <p>Return tomorrow for a new reflection.</p>
+      </footer>
+    </main>
+  </body>
+</html>

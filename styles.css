@@ -1,0 +1,147 @@
+:root {
+  color-scheme: light;
+  --page-bg: #f5f1e8;
+  --page-bg-accent: #ebe3d3;
+  --card-bg: rgba(255, 252, 246, 0.84);
+  --text-main: #2f2a24;
+  --text-soft: #665e52;
+  --border-soft: rgba(92, 78, 60, 0.14);
+  --shadow-soft: 0 20px 45px rgba(71, 56, 38, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.7), transparent 35%),
+    linear-gradient(180deg, var(--page-bg) 0%, var(--page-bg-accent) 100%);
+  color: var(--text-main);
+  font-family: "Inter", sans-serif;
+}
+
+.page-shell {
+  width: min(100%, 52rem);
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 5rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.eyebrow,
+.section-label,
+.date,
+.transition,
+.page-footer {
+  color: var(--text-soft);
+}
+
+.eyebrow,
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+h1,
+h2,
+.quote-text {
+  font-family: "Cormorant Garamond", serif;
+}
+
+h1 {
+  margin: 0.65rem 0 0.8rem;
+  font-size: clamp(3rem, 7vw, 5.4rem);
+  line-height: 0.95;
+  font-weight: 600;
+}
+
+.subtitle {
+  width: min(100%, 34rem);
+  margin: 0 auto 1rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-soft);
+}
+
+.date {
+  font-size: 0.95rem;
+}
+
+.quote-block {
+  margin-bottom: 2rem;
+}
+
+.quote-block-primary {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin: 0.4rem 0 1.3rem;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 600;
+}
+
+.quote-card {
+  margin: 0;
+  padding: 1.9rem 1.6rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  border-radius: 1.6rem;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(6px);
+}
+
+.quote-card-secondary {
+  background: rgba(255, 250, 242, 0.72);
+}
+
+.quote-text {
+  margin: 0;
+  font-size: clamp(2rem, 4.5vw, 3.3rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+.quote-author {
+  margin: 1.5rem 0 0.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.quote-source {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-soft);
+}
+
+.transition {
+  margin: 0 0 3rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.page-footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 700px) {
+  .page-shell {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .quote-card {
+    padding: 2.6rem 2.5rem;
+  }
+}
